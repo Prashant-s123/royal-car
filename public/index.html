@@ -13,8 +13,49 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
-        rel="stylesheet">
+    <link as="font" crossorigin="" rel="preload" type="font/woff2" href="./css/oswald-400.woff2">
+    <link as="font" crossorigin="" rel="preload" type="font/woff2" href="./css/oswald-500.woff2">
+    <link as="font" crossorigin="" rel="preload" type="font/woff2" href="./css/oswald-600.woff2">
+    <link as="font" crossorigin="" rel="preload" type="font/woff2" href="./css/oswald-700.woff2">
+
+    <style>
+        @font-face {
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+             src: url(./css/oswald-400.woff2) format('woff2');
+            
+        }
+
+        @font-face {
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: url(./css/oswald-500.woff2) format('woff2');
+            
+        }
+
+        @font-face {
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+             src: url(./css/oswald-600.woff2) format('woff2');
+            
+        }
+
+        @font-face {
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+             src: url(./css/oswald-700.woff2) format('woff2');
+            
+        }
+    </style>
+
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
@@ -199,7 +240,7 @@
                     Cars</span></h1>
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <img class="lozad w-75data mb-4" src="img/about.png" alt="">
+                    <img class="lozad w-75data mb-4" data-src="img/about.png" alt="">
                     <p>Justo et eos et ut takimata sed sadipscing dolore lorem, et elitr labore labore voluptua no rebum
                         sed, stet voluptua amet sed elitr ea dolor dolores no clita. Dolores diam magna clita ea eos
                         amet, amet rebum voluptua vero vero sed clita accusam takimata. Nonumy labore ipsum sea voluptua
@@ -500,7 +541,7 @@
             <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
             <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
                 <div class="team-item">
-                    <img class="lozad img-fluid w-100" data src="img/team-1.jpg" alt="">
+                    <img class="lozad img-fluid w-100" data-src="img/team-1.jpg" alt="">
                     <div class="position-relative py-4">
                         <h4 class="text-uppercase">Full Name</h4>
                         <p class="m-0">Designation</p>
@@ -516,7 +557,7 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="lozad img-fluid w-100" data src="img/team-2.jpg" alt="">
+                    <img class="lozad img-fluid w-100" data-src="img/team-2.jpg" alt="">
                     <div class="position-relative py-4">
                         <h4 class="text-uppercase">Full Name</h4>
                         <p class="m-0">Designation</p>
@@ -532,7 +573,7 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="lozad img-fluid w-100" data src="img/team-3.jpg" alt="">
+                    <img class="lozad img-fluid w-100" data-src="img/team-3.jpg" alt="">
                     <div class="position-relative py-4">
                         <h4 class="text-uppercase">Full Name</h4>
                         <p class="m-0">Designation</p>
@@ -548,7 +589,7 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="lozad img-fluid w-100" data src="img/team-4.jpg" alt="">
+                    <img class="lozad img-fluid w-100" data-src="img/team-4.jpg" alt="">
                     <div class="position-relative py-4">
                         <h4 class="text-uppercase">Full Name</h4>
                         <p class="m-0">Designation</p>
@@ -576,7 +617,8 @@
                 <div class="col-lg-6 px-0">
                     <div class="px-5 bg-secondary d-flex align-items-center justify-content-between"
                         style="height: 350px;">
-                        <img class="lozad img-fluid flex-sdatahrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
+                        <img class="lozad img-fluid flex-sdatahrink-0 ml-n5 w-50 mr-4" data-src="img/banner-left.png"
+                            alt="">
                         <div class="text-right">
                             <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
                             <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
@@ -591,7 +633,7 @@
                             <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
                             <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
                         </div>
-                        <img class="lozad img-fluid flex-sdatahrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png"
+                        <img class="lozad img-fluid flex-sdatahrink-0 mr-n5 w-50 ml-4" data-src="img/banner-right.png"
                             alt="">
                     </div>
                 </div>
@@ -609,7 +651,7 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="lozad img-fluid ml-n4" data src="img/testimonial-1.jpg" alt="">
+                        <img class="lozad img-fluid ml-n4" data-src="img/testimonial-1.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
                     <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -619,7 +661,7 @@
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="lozad img-fluid ml-n4" data src="img/testimonial-2.jpg" alt="">
+                        <img class="lozad img-fluid ml-n4" data-src="img/testimonial-2.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
                     <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -629,7 +671,7 @@
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="lozad img-fluid ml-n4" data src="img/testimonial-3.jpg" alt="">
+                        <img class="lozad img-fluid ml-n4" data-src="img/testimonial-3.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
                     <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -639,7 +681,7 @@
                 </div>
                 <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                     <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="lozad img-fluid ml-n4" data src="img/testimonial-4.jpg" alt="">
+                        <img class="lozad img-fluid ml-n4" data-src="img/testimonial-4.jpg" alt="">
                         <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                     </div>
                     <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -842,7 +884,7 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="./js/jquery-3.4.1.min.js"  defer></script>
+    <script src="./js/jquery-3.4.1.min.js" defer></script>
     <script src="./js/bootstrap.bundle.min.js" defer></script>
     <script src="./js/lozad.min.js" defer></script>
     <script src="lib/easing/easing.min.js" defer></script>
