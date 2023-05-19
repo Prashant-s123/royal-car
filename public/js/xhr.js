@@ -5,14 +5,13 @@ body.onmousemove = (
         var executed = false;
         return function () {
             if (!executed) {
-                executed = true; 
-                apiCallOnScroll("./populate.html", "first-div")                
+                executed = true;
+                apiCallOnScroll("./populate.html", "first-div")
             }
         };
 
     }
 )();
-
 function apiCallOnScroll(urlInfo, divId) {
     // create an XHR object
     var xhr = new XMLHttpRequest();
@@ -37,14 +36,12 @@ function apiCallOnScroll(urlInfo, divId) {
             // get the element to insert before
             var divElement = document.getElementById(divId);
 
-
             // get the content to insert
-            var content = html.childNodes[0];
+            var content = html.getElementById("dynamic-content");
 
             // insert the content before the specified element
             // beforeElement.previousElementSibling.insertAdjacentHTML("afterend", content.innerHTML);
             divElement.innerHTML = content.innerHTML;
-
         } else {
             // an error occurred while fetching the HTML file
             console.error("Error fetching HTML file: " + xhr.status);
@@ -57,4 +54,3 @@ function apiCallOnScroll(urlInfo, divId) {
     // Remove Event Listiner
     window.removeEventListener("mousemove", apiCallOnScroll);
 }
-
